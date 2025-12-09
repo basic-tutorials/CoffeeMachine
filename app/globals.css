@@ -1,6 +1,4 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
 :root {
   --background: #0a0a0a;
@@ -17,6 +15,16 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+@keyframes flip {
+  0% { transform: rotateY(0deg); }
+  100% { transform: rotateY(1800deg); }
+}
+
+@keyframes bounce-custom {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-20px); }
 }
 
 /* Custom styles for coin flip animation */
